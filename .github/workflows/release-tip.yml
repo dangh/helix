@@ -297,7 +297,6 @@ jobs:
     name: Update Homebrew Formula
     needs: [publish]
     runs-on: ubuntu-latest
-    if: env.preview == 'false'
     steps:
       - name: Checkout sources
         uses: actions/checkout@v5
